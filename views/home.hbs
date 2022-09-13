@@ -1,0 +1,32 @@
+<section class="section img-fluid">
+    <div class="container">
+        <div class="row">
+            <form action="/logout" method="post">
+
+            <div class="col-md-12 d-flex justify-content-end pt-3">
+                <a href=""><button class="btn btn-outline-danger btn-lg px-5" type="submit">Logout</button></a>
+            </div>
+            </form>
+        </div>
+        <div class="row p-5">
+            {{#each gcard}}
+                <div class="col-lg-4 col-md-6 col-sm-12 pt-1">
+                    <div class="card border border-dark bg-black p-1" style="width: 20rem; ">
+                        <img
+                            src="{{this.Image}}"
+                            class="card-img-top img-fluid"
+                            alt="..."
+                            style="height:12rem;width:20rem ;"
+                        />
+                        <div class="card-body">
+                            <h3 class="card-title text-white">{{this.Name}}</h3>
+                            <h5 class="card-text text-secondary">{{this.Category}}</h5>
+                            <p class="card-text text-light">{{this.Description}}</p>
+                            <a href="#" class="btn btn-success">Buy <span>{{this.Price}}</span></a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

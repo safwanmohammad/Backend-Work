@@ -1,0 +1,29 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+.section{
+  width: 100%;
+  height: auto;
+  /* background: url(../images/bg3.jpg); */
+  background: linear-gradient(to right, rgb(106, 17, 211), rgb(0, 0, 0));
+  background-size: 100% 100%;
+}
+@media (max-width: 768px) {
+  .section{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgb(0, 17, 46));
+    /* background: url(../images/bg3.jpg); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+}
+.gradient-custom{
+  /* background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)) */
+  width: 100%;
+  height: auto;
+  background: url(../images/bg3.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
